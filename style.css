@@ -25,3 +25,24 @@ body{
     font-weight: 700;
     word-spacing: 15px;
 }
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+    
+    .con1 {
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .con1 img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .con2 {
+        width: 100%;
+    }
+}
