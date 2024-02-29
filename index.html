@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dami's iphone plug</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="con1">
+      <div class="image">
+        <img id="Dami" src="OIP.jpg" alt="iphone 15 pro max" height="300px" />
+      </div>
+    </div>
+    <div class="con2">
+      <div class="discount">
+      <h1>50%  DISCOUNT </h1>
+      </div>
+      <div class="text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nihil
+            reprehenderit nisi fugit? Accusantium perspiciatis quos voluptatem
+            molestiae assumenda est, amet officia distinctio necessitatibus,
+            inventore odio eveniet, quasi praesentium sapiente? kagsajsa ahsvhaGUADAD 
+        ABDVAHDA advhdgaud hsdvqvdhadjd navhudvabsjabcahs hgshguiugwsbd uadgiuegfwjbfeas gasuidfwhf
+    abfehfvhebfbvefhefve fgyqwhfenf hvfqifgiue </p>
+    <h2 id="Giveaway"> Giveaway starts on the 9th of march 2024</h2> 
+    </div>
+    
+
+<div class="countdown" id="countdown">
+  
+</div>
+
+</div>
+
+
+    </div>
+
+    <script>
+      var countDownDate = new Date("2024-03-09").getTime();
+      var x = setInterval(() => {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById(
+          "countdown"
+        ).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML =
+            "the giveaway has ended";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

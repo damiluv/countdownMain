@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    
+}
+
+.con1{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    width: 45%;
+}
+.con1 img{
+    width: 500px;
+}
+
+.con2{
+    width: 50%;
+    display: block;
+}
+.countdown{
+    font-size: 48px;
+    font-weight: 700;
+    word-spacing: 15px;
+}
